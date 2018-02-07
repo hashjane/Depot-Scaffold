@@ -11,6 +11,7 @@ validates :image_url, allow_blank: true, format: {
     message:  'must be a URL for GIF, JPG or PNG image.'
   }
 
-validates :title, length: { minimum: 10 }
+validates :title, length: { minimum: 10,
+  too_short: "should have at least %{count} characters"}
 
 end
