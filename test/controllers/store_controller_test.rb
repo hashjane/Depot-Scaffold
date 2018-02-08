@@ -11,3 +11,4 @@ class StoreControllerTest < ActionDispatch::IntegrationTest
   end
 
 end
+
