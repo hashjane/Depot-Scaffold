@@ -1,7 +1,8 @@
 class StoreController < ApplicationController
   include CurrentCart
-  include ActionView::Helpers::NumberHelper
   before_action :set_cart
+
+include ActionView::Helpers::NumberHelper
   helper_method :number_to_nzd
 
   def increment_session_counter
